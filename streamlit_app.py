@@ -50,7 +50,7 @@ streamlit.stop()
 streamlit.header ("The fruit load list contains:")
 #Snowflake-related functions
 def get_fruit_load_list():
-     with my cnx. cursor() as my cur:
+     with my cnx.cursor() as my cur:
           my cur.execute("select * from fruit load list")
           return my cur. fetchall()
 # Add a button to load the fruit
